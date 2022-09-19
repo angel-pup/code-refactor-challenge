@@ -1,16 +1,19 @@
-/* Changed order of CSS to order of specificity and following HTML order somewhat
-(this seems a bit counter-intuitive, but it doesn't affect anything in this code and I like it). */
+/* Changed order of CSS rules to be in order of specificity and following HTML element order somewhat.
+This seems possibly counter-intuitive, but it doesn't affect anything in this code and it's easier to read imo. */
 
+/* Since this rule targets all elements on the page, it will be the most grand of all parents (first rule is all lol) */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Child of the above rule, but parent of the rest, so most appropriate position */
 body {
     background-color: #d9dcd6;
 }
 
+/* Children of the above rules, but next most broad */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -20,6 +23,7 @@ p {
     font-size: 16px;
 }
 
+/* Rules from here on will follow the section order of the HTML code, then increase in specificity */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -127,6 +131,8 @@ footer h2 {
     font-size: 20px;
 }
 
+/* Moved classes and ids to the bottom, in order of specificity/alphabetical */
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -137,6 +143,11 @@ footer h2 {
     margin-left: 25px;
 }
 
+/* Since we moved the image pointer to HTML, updated CSS properties reflecting the change:
+    removed background-image: url(...);
+    changed background-size to object-fit (so that the same styling will still be applied: object-fit is doing the same job, as it is pointing to the same image effectively)
+    changed background-position to object-position (so that the same styling will still be applied: similar to above change)
+ */
 #hero {
     height: 800px;
     width: 100%;

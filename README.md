@@ -18,7 +18,7 @@ Visit the GitHub pages site [here](https://spencerrsms.github.io/module-1-challe
 
 ## Usage
 
-Just a desmonstration/minor project. Feel free to inspect the code! To open the Chrome DevTools, try pressing Command+Option+I (macOS) or Control+Shift+I (Windows) while viewing the hosted ssite from within Google Chrome.
+Just a demonstration/minor project. Feel free to inspect the code! To open the Chrome DevTools, try pressing Command+Option+I (macOS) or Control+Shift+I (Windows) while viewing the hosted site from within Google Chrome.
 
 ## Credits
 
