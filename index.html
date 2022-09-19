@@ -4,43 +4,58 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- I hope this is a better title lol -->
     <title>Horisen Code Refactoring Demo</title>
 </head>
 
 <body>
-    <header> <!-- CHANGE CSS TO POINT TO HEADER instead of class (changed div to header) -->
-        <h1>Hori<span>seo</span>n</h1> <!-- possibly fix span? -->
+    <!-- Changed div to header and removed header class, as this is the top of page that contains the navigation links and company logo and class is unnecessary -->
+    <header>
+        <!-- Removed class, instead pointed CSS directly to this span. If multiple spans are needed, an id may be better here instead of class -->
+        <h1>Hori<span>seo</span>n</h1>
+        <!-- Since this is indeed a navigation bar, a nav tag would be better here instead of div -->
         <nav>
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <!-- Updated hrefs to point to ids on this page, assuming this is useful for when multiple html pages are used though... -->
+                    <a href="index.html#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="index.html#online-reputation-management">Online Reputation Management</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="index.html#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <img id="hero" src="./assets/images/digital-marketing-meeting.jpg"/>
+    <!--
+        img tag would be better instead of a div here, and moved image pointer to HTML from CSS for consistency.
+        I think, in the future, image pointers in CSS would be just as good, if not better, but alt is still necessary in case image/CSS fails to load.
+        I've also modified class to be an id here, as styling for this image is unique.
+    -->
+    <img id="hero" src="./assets/images/digital-marketing-meeting.jpg" alt="Image depicting multiple actors in business casual attire working on a project together"/>
+    <!-- main seems more appropriate, as the main content of the site is held within this tag -->
     <main>
-        <article>
+        <!--
+            Changed div tags to article tags. From what I'm readying, articles are better suited for sections of a webpage that contain paragraphs/comments.
+            Also added ids to each article, and remove classes, as ids are more appropriate but still hold similar functionality.
+        -->
+        <article id="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </article>
-        <article>
+        <article id=online-reputation-management>
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
-        <article>
+        <article id="social-media-marketing">
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -48,7 +63,9 @@
             </p>
         </article>
     </main>
+    <!-- Change div to aside, as this section is indirectly related to main content and also displayed off to the side -->
     <aside>
+        <!-- UPDATE NEEDED: Changed div to section, thinking about changing to article though, will do more research -->
         <section>
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="symbol depicting greater outreach"/>
@@ -72,7 +89,7 @@
         </section>
     </aside>
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
+        <h2>Made with ❤️️ by Horiseon</h2> <!-- how come, when I remove the extra spaces after the heart icon here, the icon turns black in browser? -->
         <p>
             &#169; 2019 Horiseon Social Solution Services, Inc.
         </p>
