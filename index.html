@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<!-- NOTE: Comments are placed above changes/what I'm describing -->
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- I hope this is a better title lol -->
+    <!-- I hope this is a better title lol-->
     <title>Horisen Code Refactoring Demo</title>
 </head>
 
 <body>
-    <!-- Changed div to header and removed header class, as this is the top of page that contains the navigation links and company logo and class is unnecessary -->
+    <!--
+        changed div to header
+        removed header class, as this is the top of page that contains the navigation links/company logo, thus class is unnecessary
+    -->
     <header>
-        <!-- Removed class, instead pointed CSS directly to this span. If multiple spans are needed, an id may be better here instead of class -->
+        <!--
+            removed class
+            pointed CSS directly to this span instead, though if multiple spans are needed, an id or class may be more appropriate depending on styling/uniqueness
+        -->
         <h1>Hori<span>seo</span>n</h1>
-        <!-- Since this is indeed a navigation bar, a nav tag would be better here instead of div -->
+        <!-- changed div to nav, which is more appropriate for navigation bars such as this -->
         <nav>
             <ul>
                 <li>
-                    <!-- Updated hrefs to point to ids on this page, assuming this is useful for when multiple html pages are used though... -->
+                    <!-- updated hrefs, though this seems more appropriate for multiple HTML pages -->
                     <a href="index.html#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
@@ -30,68 +37,83 @@
         </nav>
     </header>
     <!--
-        img tag would be better instead of a div here, and moved image pointer to HTML from CSS for consistency.
-        I think, in the future, image pointers in CSS would be just as good, if not better, but alt is still necessary in case image/CSS fails to load.
-        I've also modified class to be an id here, as styling for this image is unique.
+        changed div to img (more appropriate)
+        moved image pointer to HTML from CSS for consistency
+        added alt in case image fails to load
+        removed class
+        added id, as styling for this is unique
     -->
-    <img id="hero" src="./assets/images/digital-marketing-meeting.jpg" alt="Image depicting multiple actors in business casual attire working on a project together"/>
+    <img id="hero" src="./assets/images/digital-marketing-meeting.jpg" alt="Image depicting multiple actors in business casual attire working on a project together" />
     <!-- main seems more appropriate, as the main content of the site is held within this tag -->
     <main>
         <!--
-            Changed div tags to article tags. From what I'm readying, articles are better suited for sections of a webpage that contain paragraphs/comments.
-            Also added ids to each article, and remove classes, as ids are more appropriate but still hold similar functionality.
+            changed div tags to article tags. From what I'm readying, articles are better suited for sections of a webpage that contain paragraphs/comments
+            removed classes
+            added ids to each article, as ids are more appropriate but still hold similar functionality
+            added alt in img tags
         -->
         <article id="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Image depicting workstation alongside a notebook filled with concepts" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </article>
+        <!-- see above -->
         <article id=online-reputation-management>
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Image depicting a graph that shows an increase in reputation, visible from a laptop's display" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
+        <!-- see above -->
         <article id="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Image depicting a collaboration between individuals around a table full of symbols and buzzwords related to social media" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </article>
     </main>
-    <!-- Change div to aside, as this section is indirectly related to main content and also displayed off to the side -->
+    <!-- changed div to aside, as this section is indirectly related to main content and also displayed off to the side -->
     <aside>
-        <!-- UPDATE NEEDED: Changed div to section, thinking about changing to article though, will do more research -->
-        <section>
+        <!-- changed div tags to article tags, as this seems most appropriate for the content held within aside -->
+        <article>
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" alt="symbol depicting greater outreach"/>
+            <!-- added alt -->
+            <img src="./assets/images/lead-generation.png" alt="symbol depicting greater outreach, thematically/conceptually" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </section>
-        <section>
+        </article>
+        <article>
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" alt="symbol depicting heightened prospects"/>
+            <!-- added alt -->
+            <img src="./assets/images/brand-awareness.png" alt="symbol depicting heightened prospects, thematically/conceptually" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </section>
-        <section>
+        </article>
+        <article>
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" alt="symbol depicting cost savings"/>
+            <!--
+                fixed improper closing tag
+                added alt
+            -->
+            <img src="./assets/images/cost-management.png" alt="symbol depicting cost savings, thematically/conceptually" />
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </section>
+        </article>
     </aside>
+    <!-- changed div to footer and removed class as it's no longer needed -->
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2> <!-- how come, when I remove the extra spaces after the heart icon here, the icon turns black in browser? -->
+        <!-- When I remove the extra spaces after the heart icon here, the icon changes color in browser? what sorcery is this?? -->
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <!-- changed copyright symbol to the equivalent HTML named code, though don't think this matters much -->
         <p>
-            &#169; 2019 Horiseon Social Solution Services, Inc.
+            &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
     </footer>
 </body>
