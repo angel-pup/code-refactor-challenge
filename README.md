@@ -7,6 +7,7 @@
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Code Example](#Code Example)
 
 ## Description
 In this refactoring project, aim to improve search engine optimization via semantic improvements in the code.
@@ -35,3 +36,9 @@ Please refer to the LICENSE file for more information.
 ## Features
 
 Demo refactoring project for code semantics, please inspect the HTML and CSS as well as earlier stages of this project in it's [GitHub repository](https://github.com/SpencerRSMS/module-1-challenge).
+
+## Code Example
+#### Before refactor:
+![image](./assets/images/code-example-before.png)
+#### After refactor:
+![image](./assets/images/code-example-after.png)
