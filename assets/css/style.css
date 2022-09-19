@@ -1,7 +1,8 @@
 /* Changed order of CSS rules to be in order of specificity and following HTML element order somewhat.
 This seems possibly counter-intuitive, but it doesn't affect anything in this code and it's easier to read imo. */
 
-/* Since this rule targets all elements on the page, it will be the most grand of all parents (first rule is all lol) */
+/* Since this rule targets all elements on the page, it will be the most grand of all parents
+    (first rule is all I mean, lol) */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -145,8 +146,10 @@ footer h2 {
 
 /* Since we moved the image pointer to HTML, updated CSS properties reflecting the change:
     removed background-image: url(...);
-    changed background-size to object-fit (so that the same styling will still be applied: object-fit is doing the same job, as it is pointing to the same image effectively)
-    changed background-position to object-position (so that the same styling will still be applied: similar to above change)
+    changed background-size to object-fit (so that the same styling will still be applied: object-fit is doing the
+        same job, as it is pointing to the same image effectively)
+    changed background-position to object-position (so that the same styling will still be applied: similar
+        to above change)
  */
 #hero {
     height: 800px;
