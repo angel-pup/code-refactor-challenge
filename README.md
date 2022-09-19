@@ -1,4 +1,4 @@
-# Code Refactor Starter Code
+# Code Refactor - Module 1 Challenge - urban-octo-telegram
 
 ## Table of Contents
 
