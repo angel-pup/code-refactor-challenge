@@ -13,6 +13,7 @@ In this refactoring project, aim to improve search engine optimization via seman
 Tags will be updated to reflect the portion of the article that best suits it. Since CSS is pointing to these tags, we will also update the CSS code to reflect these changes.
 
 ## Installation
+Visit the GitHub pages site [here](https://spencerrsms.github.io/module-1-challenge/), or the GitHub repo [here](https://github.com/SpencerRSMS/module-1-challenge).
 (No installation required)
 
 ## Usage
@@ -23,8 +24,8 @@ Just a desmonstration/minor project. Feel free to inspect the code! To open the 
 
 Refactored by Spencer Stewart, original code thanks to KU coding bootcamp.
 
+Personal links:
 [GitHub](https://github.com/SpencerRSMS/)
-
 [LinkedIn](https://www.linkedin.com/in/r-spencer-stewart/)
 
 ## License
